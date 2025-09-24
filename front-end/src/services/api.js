@@ -1,6 +1,7 @@
 import axios from "axios";
+import { API_ENDPOINTS } from "../config/api.js";
 
-const API_URL = "http://localhost:8081/api/expenses";
+const API_URL = API_ENDPOINTS.expenses;
 
 export const getExpenses = async (startDate, endDate) => {
   try {
