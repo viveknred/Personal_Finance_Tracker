@@ -1,37 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-.App {
-  font-family: "Montserrat", sans-serif;
+* {
+  box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Playfair Display", serif;
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.dashboard {
-  max-width: 100%;
-  margin: auto;
-  padding: 20px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
-form {
-  margin-bottom: 20px;
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
 }
 
-label {
-  margin: 10px 0;
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
 }
 
-input {
-  margin: 10px;
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 3px;
 }
 
-button {
-  margin-top: 10px;
-  padding: 5px 10px;
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Glass effect utility */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
