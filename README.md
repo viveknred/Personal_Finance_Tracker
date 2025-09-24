@@ -32,7 +32,7 @@ The Personal Finance Tracker is a web application designed to help users manage 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/personal-finance-tracker.git
+   git clone https://github.com/viveknred/personal-finance-tracker.git
    ```
 
 2. Navigate to the frontend directory:
